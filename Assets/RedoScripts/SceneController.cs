@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace PhysicsProjectileSimulator
+{
+    public class SceneController : GameController
+    {
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        // scene manager has scenes in a list. This project has my three scenes: main menu, physics simulator, projectile editor.
+        // on call of this function the scene with the specific index referenced by the inputted indexOfScene integer, will be loaded.
+        public void ChangeScene(int indexOfScene)
+        {
+            SceneManager.LoadScene(indexOfScene);
+        }
+    }
+}
+
